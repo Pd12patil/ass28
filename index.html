@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season Img Display</title>
+    <style>
+        .head {
+            color: rgb(30, 0, 255);
+            font-size: 2.5rem;
+        }
+
+        .button-container {
+            /* margin-bottom: 20px;  */
+            text-align: center;
+            height: auto;
+            width: 400px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin: 100px auto;
+        }
+
+        .btn {
+            border: none;
+            padding: 8px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: aqua;
+            font-size: 17px;
+        }
+
+        .btn1:hover {
+            background-color: rgb(238, 158, 144);
+        }
+
+        .btn2:hover {
+            background-color: rgb(224, 132, 219);
+        }
+
+        .btn3:hover {
+            background-color: rgb(150, 126, 218);
+        }
+
+        img {
+            display: none; 
+            max-width: 300px; 
+            margin-top: 20px;
+            margin: 100px auto;
+            height: 250px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+
+        <h1 class="head">Select a Season</h1>
+        <img id="seasonImage" src="" alt="Season Image">
+        <button class="btn btn1" onclick="showImage('summer')">Summer</button>
+        <button class="btn btn2" onclick="showImage('winter')">Winter</button>
+        <button class="btn btn3" onclick="showImage('monsoon')">Monsoon</button>
+        <!-- <img id="seasonImage" src="" alt="Season Image"> -->
+
+    </div>
+
+    <script>
+
+        function showImage(season) {
+            const img = document.getElementById('seasonImage');
+            // switch (season) {
+            //     case 'summer':
+                    // img.src = './img/sun2.jpg';
+                    // img.alt = 'Summer-Sun';
+            //         break;
+            //     case 'winter':
+            //         img.src = './img/jacket.jpg';
+            //         img.alt = 'Winter-Jacket';
+            //         break;
+            //     case 'monsoon':
+            //         img.src = './img/umbrella.png';
+            //         img.alt = 'Monsoon-Umbrella';
+            //         break;
+            // }
+            // img.style.display = 'block'; 
+
+            if (season === 'summer'){
+                img.src = './img/sun2.jpg';
+                img.alt = 'Summer-Sun';
+            }else if(season === 'winter'){
+                img.src = './img/jacket.jpg';
+                img.alt = 'Winter-Jacket';
+            }else if(season === 'monsoon'){
+                img.src = './img/umbrella.png';
+                img.alt = 'Monsoon-Umbrella';
+            }
+
+            img.style.display = 'block';
+        }
+
+    </script>
+
+</body>
+</html>
