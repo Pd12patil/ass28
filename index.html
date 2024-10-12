@@ -68,33 +68,23 @@
 
         function showImage(season) {
             const img = document.getElementById('seasonImage');
-            // switch (season) {
-            //     case 'summer':
-                    // img.src = './img/sun2.jpg';
-                    // img.alt = 'Summer-Sun';
-            //         break;
-            //     case 'winter':
-            //         img.src = './img/jacket.jpg';
-            //         img.alt = 'Winter-Jacket';
-            //         break;
-            //     case 'monsoon':
-            //         img.src = './img/umbrella.png';
-            //         img.alt = 'Monsoon-Umbrella';
-            //         break;
-            // }
-            // img.style.display = 'block'; 
-
-            if (season === 'summer'){
-                img.src = './img/sun2.jpg';
-                img.alt = 'Summer-Sun';
-            }else if(season === 'winter'){
-                img.src = './img/jacket.jpg';
-                img.alt = 'Winter-Jacket';
-            }else if(season === 'monsoon'){
-                img.src = './img/umbrella.png';
-                img.alt = 'Monsoon-Umbrella';
+            switch (season) {
+                case 'summer':
+                    img.src = './img/sun2.jpg';
+                    img.alt = 'Summer-Sun';
+                    break;
+                case 'winter':
+                    img.src = './img/jacket.jpg';
+                    img.alt = 'Winter-Jacket';
+                    break;
+                case 'monsoon':
+                    img.src = './img/umbrella.png';
+                    img.alt = 'Monsoon-Umbrella';
+                    break;
             }
-            img.style.display = 'block';
+            img.style.display = 'block'; 
+
+            
         }
 
     </script>
